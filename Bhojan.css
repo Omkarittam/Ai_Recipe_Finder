@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/Images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the header text */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px; /* Add some padding */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    position: absolute; /* Position logo absolutely */
+    left: 20px; /* Keep logo on the left */
+}
+
+.logo-container img {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some spacing to the right */
+}
+
+#header-text {
+    text-align: center; /* Center the text */
+    flex-grow: 1; /* Allow text to grow */
+}
+
+#header-title {
+    text-align: center;
+    font-size: 2rem; /* Adjust size as needed */
+    margin: 10px 0; /* Adjust this value for spacing */
+}
+
+#header-quote {
+    text-align: center;
+    font-size: 1.2rem; /* Adjust size as needed */
+    margin: 20px 0; /* Adjust this value for spacing */
+    color: #555; /* Optional color adjustment */
+    position: relative;
+    margin-top: 10px;
+    top: 30px;
+    right: 250px;
+}
+
+
+
+#welcome-section {
+    margin-top: 50px;
+    padding: 50px;
+    background-image: url('/Images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(43, 33, 33);
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in the welcome section */
+}
+
+#welcome-section h1 {
+    font-size: 2rem; /* Increased font size for better visibility */
+    margin-bottom: 10px;
+    color: wheat;
+}
+
+#welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#find-recipe-button button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #4b8ea5, #a54b8e);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease; /* Add transform to transition */
+    animation: pop 0.5s ease; /* Add animation */
+}
+
+#find-recipe-button button:hover {
+    background: linear-gradient(to right, #a54b8e, #4b8ea5);
+    transform: scale(1.1); /* Scale up the button */
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8); /* Start smaller */
+    }
+    50% {
+        transform: scale(1.1); /* Slightly bigger */
+    }
+    100% {
+        transform: scale(1); /* Back to normal */
+    }
+}
